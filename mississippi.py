@@ -1,0 +1,10 @@
+def most_frequent(string):
+    d = dict()
+    for letter in string:
+        if letter not in d:
+            d[letter] = 1
+        else:
+            d[letter] += 1
+    return d
+
+print (most_frequent('mississippi'))
